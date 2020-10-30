@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<data>
+    <template id="snippet_testimonial" name="Mon snippet starly">
+        <section class="snippet_testimonial">
+            <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4">
+                <img alt="client" class="rounded-circle" src="/test_starly/static/src/img/client1.png"/>
+                <h3>Client Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-lg-4">
+                <img alt="client" class="rounded-circle" src="/test_starly/static/src/img/client1.png"/>
+                <h3>Client Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-lg-4">
+                <img alt="client" class="rounded-circle" src="/test_starly/static/src/img/client1.png"/>
+                <h3>Client Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </template>
+    <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="test_starly.snippet_testimonial" t-thumbnail="/test_starly/static/src/img/ui/thumb.png"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_contenu" name="Contenu snippet">
+        <section class="snippet_contenu">
+            <div class="container text-center">
+            <div class="row">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Well done!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr></hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+            </div>
+            </div>
+        </section>
+    </template>
+    <template id="place_into" inherit_id="website.snippets" name="Place">
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="test_starly.snippet_contenu" t-thumbnail="/test_starly/static/src/img/ui/thumb.png"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_notification" name="Notification">
+        <section class="snippet_notification">
+            <div class="container text-center">
+            <div class="row">
+                   <button type="button" class="btn btn-primary">
+                    Notifications <span class="badge badge-light">4</span>
+                    </button>
+            </div>
+            </div>
+        </section>
+    </template>
+    <template id="place_snippet_notification" inherit_id="website.snippets" name="Places nippet_notification">
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="test_starly.snippet_notification" t-thumbnail="/test_starly/static/src/img/ui/thumb.png"/>
+        </xpath>
+    </template>
+
+    
+
+    <template id="snippet_card_hf" name="card_hf">
+        <section class="snippet_card_hf">
+            <div class="container text-center">
+            <div class="row">
+                   <div class="card">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+    </template>
+    <template id="place_snippet_card_hf" inherit_id="website.snippets" name="Places snippet_card_hf">
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="test_starly.snippet_card_hf" t-thumbnail="/test_starly/static/src/img/ui/thumb.png"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_caroussel" name="caroussel_hf">
+        <section class="snippet_caroussel">
+            <div class="container text-center">
+            <div class="row">
+                <div class="corp">
+                   
+                </div>
+            </div>
+            </div>
+        </section>
+    </template>
+    <template id="place_snippet_caroussel" inherit_id="website.snippets" name="Places snippet_caroussel">
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="test_starly.snippet_caroussel" t-thumbnail="/test_starly/static/src/img/ui/thumb.png"/>
+        </xpath>
+    </template>
+    </data>
+</odoo>

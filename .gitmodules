@@ -1,0 +1,3 @@
+[submodule "openacademy_starly"]
+	path = openacademy_starly
+	url = https://github.com/sbm20202020/openacademy.git
